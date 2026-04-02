@@ -17,43 +17,7 @@ permalink: /people/
   {% endfor %}
 </ul>
 
----
 
-## 博士研究生（按年级排序）
-
-<ul>
-  {% for person in site.people %}
-    {% if person.sidebar[0].text contains "博士" %}
-      {% unless person.title == "谢冰" or person.title == "邹艳珍" %}
-    <li><a href="{{ base_path }}{{ person.url }}">{{ person.title }}</a></li>
-      {% endunless %}
-    {% endif %}
-  {% endfor %}
-</ul>
-
----
-
-## 硕士研究生（按年级排序）
-
-<ul>
-  {% for person in site.people %}
-    {% if person.sidebar[0].text contains "硕士" %}
-    <li><a href="{{ base_path }}{{ person.url }}">{{ person.title }}</a></li>
-    {% endif %}
-  {% endfor %}
-</ul>
-
----
-
-## 本科生
-
-<ul>
-  {% for person in site.people %}
-    {% if person.sidebar[0].text contains "本科" %}
-    <li><a href="{{ base_path }}{{ person.url }}">{{ person.title }}</a></li>
-    {% endif %}
-  {% endfor %}
-</ul>
 
 <style>
 ul {
