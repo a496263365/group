@@ -14,6 +14,13 @@
     @include prefix(0.5 of 12);
   }
 
+  h2 {
+    padding-bottom: 0.5em;
+    margin-top: 1.5em;
+    border-bottom: 1px solid var(--global-border-color);
+    font-size: $type-size-3;
+  }
+
   a {
     text-decoration: underline;
 
@@ -81,6 +88,62 @@
 
   .archive__item-title {
     text-decoration: underline;
+  }
+}
+
+/* ==========================================================================
+   PUBLICATION
+   ========================================================================== */
+
+.publication-item {
+  margin-bottom: 1.5em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid var(--global-border-color);
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.publication-authors {
+  margin: 0 0 0.3em;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.publication-title {
+  margin: 0 0 0.3em;
+  font-size: 1.15rem;
+  font-weight: 600;
+
+  .publication-year {
+    font-weight: 400;
+    color: var(--global-text-color);
+    margin-right: 0.5em;
+  }
+
+  a {
+    color: #333;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.publication-venue {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #888;
+
+  a {
+    color: #4a90d9;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
 
