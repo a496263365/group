@@ -253,9 +253,10 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: true
-      share: true
-      related: true
+      comments: false
+      share: false
+      related: false
+      taxonomy: false
   # _pages
   - scope:
       path: ""
