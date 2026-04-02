@@ -3,31 +3,28 @@
 # Changing the order here will adjust the order and you can also add additional
 # links. Removing a link prevents it from showing in the header, but does not
 # prevent it from being included in the site.
-#
-# NOTE that only one of the CV options should be selected, the first is for the
-#      Markdown formatted page while the second is generated using JSON.
 
 main:
-  - title: "Publications"
+  - title: "首页"
+    url: /
+
+  - title: "成员"
+    url: /people/
+
+  - title: "研究方向"
+    url: /research/
+
+  - title: "论文"
     url: /publications/
 
-  - title: "Talks"
-    url: /talks/    
+  - title: "最新动态"
+    url: /news/
 
-  - title: "Teaching"
-    url: /teaching/    
-    
-  - title: "Portfolio"
-    url: /portfolio/
-        
-  - title: "Blog Posts"
-    url: /year-archive/
-    
-  - title: "CV"
-    url: /cv/
-    
-  # - title: "CV"
-  #   url: /cv-json/
-    
-  - title: "Guide"
-    url: /markdown/
+  - title: "加入我们"
+    url: /join/
+
+  - title: "关于"
+    url: /about/
+
+  - title: "English"
+    url: /en/
