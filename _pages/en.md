@@ -18,9 +18,7 @@ Our research group is affiliated with Peking University, focusing on software en
 
 - [Home](/)
 - [People](/people/)
-- [Research](/research/)
 - [Publications](/publications/)
 - [News](/news/)
-- [Join Us](/join/)
 
 **Note**: This English version is under construction. Please visit the [Chinese version](/) for the complete content.
