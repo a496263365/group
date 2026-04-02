@@ -8,17 +8,20 @@ main:
   - title: "首页"
     url: /
 
-  - title: "成员"
+  - title: "最新动态"
+    url: /news/
+
+  - title: "团队成员"
     url: /people/
+
+  - title: "论文发表"
+    url: /publications/
+
+  - title: "专利软著"
+    url: /patents/
 
   - title: "研究方向"
     url: /research/
-
-  - title: "论文"
-    url: /publications/
-
-  - title: "最新动态"
-    url: /news/
 
   - title: "加入我们"
     url: /join/

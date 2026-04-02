@@ -228,6 +228,10 @@ collections:
     output: true
     permalink: /:collection/:path/
     date_key: year
+  patents:
+    output: true
+    permalink: /:collection/:path/
+    date_key: year
   portfolio:
     output: true
     permalink: /:collection/:path/
@@ -272,6 +276,15 @@ defaults:
   - scope:
       path: ""
       type: publications
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
+  # _patents
+  - scope:
+      path: ""
+      type: patents
     values:
       layout: single
       author_profile: true

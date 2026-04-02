@@ -1,0 +1,25 @@
+{% include base_path %}
+
+<div class="publication-item">
+  <p class="publication-authors">
+    {% if post.authors %}
+      {{ post.authors | join: ", " }}
+    {% elsif post.author %}
+      {{ post.author }}
+    {% endif %}
+  </p>
+  <p class="publication-title">
+    {% if post.year %}
+      <span class="publication-year">({{ post.year }})</span>
+    {% endif %}
+    {{ post.title }}
+  </p>
+  <p class="publication-venue">
+    {% if post.venue %}
+      {{ post.venue }}{% if post.registration_number != '' %}, {{ post.registration_number }}{% endif %}
+    {% endif %}
+    {% if post.status and post.status != '' %}
+      [{{ post.status }}]
+    {% endif %}
+  </p>
+</div>
