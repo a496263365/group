@@ -128,7 +128,7 @@ sidebar:
 
 ## 联系方式
 
-- 邮箱：zouyanzhen@pku.edu.cn
+- 邮箱：zouyz@pku.edu.cn
 - 地址：北京大学
 
 <style>
