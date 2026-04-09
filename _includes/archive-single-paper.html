@@ -16,7 +16,7 @@
   </p>
   <p class="publication-venue">
     {% if post.venue %}
-      {{ post.venue }}{% if post.doi != '' %}, DOI: <a href="https://doi.org/{{ post.doi }}" target="_blank">{{ post.doi }}</a>{% endif %}
+      {{ post.venue }}{% if post.doi%}{% if post.doi != '' %}, DOI: <a href="https://doi.org/{{ post.doi }}" target="_blank">{{ post.doi }}</a>{% endif %}{% endif %}
     {% endif %}
   </p>
 </div>

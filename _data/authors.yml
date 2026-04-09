@@ -2,24 +2,33 @@
 
 Xie Bing:
   name        : "谢冰"
+  key         : "Xie Bing"
   email       : "xiebing@pku.edu.cn"
   bio         : "北京大学信息科学技术学院教授、国家杰出青年基金获得者"
   avatar      : "xie-bing.jpeg"
   employer    : "北京大学信息科学技术学院"
+  group       : "负责人"
+  order       : 1
 
 Zou Yanzhen:
   name        : "邹艳珍"
+  key         : "Zou Yanzhen"
   email       : "zouyz@pku.edu.cn"
   bio         : "北京大学计算机学院研究员、博导、硕导"
   avatar      : "zou-yanzhen.png"
   employer    : "北京大学计算机学院"
+  group       : "负责人"
+  order       : 2
 
 Ma Zexiong:
   name        : "马泽雄"
+  key         : "Ma Zexiong"
   email       : ""
   bio         : "软件复用研究组博士研究生（直博），研究方向为软件工程"
   avatar      : "profile.png"
   employer    : "北京大学"
+  group       : "博士研究生"
+  order       : 101
   type        : "博士研究生（直博）"
   grade       : "2021级"
   research    : "软件工程"
@@ -27,10 +36,13 @@ Ma Zexiong:
 
 Li Yuxuan:
   name        : "李宇轩"
+  key         : "Li Yuxuan"
   email       : ""
   bio         : "软件复用研究组博士研究生（直博），研究方向为软件工程"
   avatar      : "profile.png"
   employer    : "北京大学"
+  group       : "博士研究生"
+  order       : 102
   type        : "博士研究生（直博）"
   grade       : "2021级"
   research    : "软件工程"
@@ -38,10 +50,13 @@ Li Yuxuan:
 
 Yuan Haizhuo:
   name        : "袁海卓"
+  key         : "Yuan Haizhuo"
   email       : ""
   bio         : "软件复用研究组博士研究生（直博），研究方向为软件工程"
   avatar      : "profile.png"
   employer    : "北京大学"
+  group       : "博士研究生"
+  order       : 103
   type        : "博士研究生（直博）"
   grade       : "2022级"
   research    : "软件工程"
@@ -49,10 +64,13 @@ Yuan Haizhuo:
 
 Wang Junfeng:
   name        : "王俊枫"
+  key         : "Wang Junfeng"
   email       : ""
   bio         : "软件复用研究组博士研究生（直博），研究方向为软件工程"
   avatar      : "profile.png"
   employer    : "北京大学"
+  group       : "博士研究生"
+  order       : 104
   type        : "博士研究生（直博）"
   grade       : "2023级"
   research    : "软件工程"
@@ -60,10 +78,13 @@ Wang Junfeng:
 
 Zhao Xianlin:
   name        : "赵衔麟"
+  key         : "Zhao Xianlin"
   email       : ""
   bio         : "软件复用研究组硕士研究生，研究方向为软件工程"
   avatar      : "profile.png"
   employer    : "北京大学"
+  group       : "硕士研究生"
+  order       : 201
   type        : "硕士研究生"
   grade       : "2023级"
   research    : "软件工程"
@@ -71,10 +92,13 @@ Zhao Xianlin:
 
 Deng Tongwei:
   name        : "邓同蔚"
+  key         : "Deng Tongwei"
   email       : ""
   bio         : "软件复用研究组博士研究生（直博），研究方向为软件工程"
   avatar      : "profile.png"
   employer    : "北京大学"
+  group       : "博士研究生"
+  order       : 105
   type        : "博士研究生（直博）"
   grade       : "2024级"
   research    : "软件工程"
@@ -82,10 +106,13 @@ Deng Tongwei:
 
 Yan Siqiao:
   name        : "闫思桥"
+  key         : "Yan Siqiao"
   email       : ""
   bio         : "软件复用研究组博士研究生（直博），研究方向为软件工程"
   avatar      : "profile.png"
   employer    : "北京大学"
+  group       : "博士研究生"
+  order       : 106
   type        : "博士研究生（直博）"
   grade       : "2024级"
   research    : "软件工程"
@@ -93,10 +120,13 @@ Yan Siqiao:
 
 Qiu Xiaofei:
   name        : "邱小非"
+  key         : "Qiu Xiaofei"
   email       : ""
   bio         : "软件复用研究组硕士研究生，研究方向为软件工程"
   avatar      : "profile.png"
   employer    : "北京大学"
+  group       : "硕士研究生"
+  order       : 202
   type        : "硕士研究生"
   grade       : "2024级"
   research    : "软件工程"
@@ -104,10 +134,13 @@ Qiu Xiaofei:
 
 Li Kunze:
   name        : "李坤泽"
+  key         : "Li Kunze"
   email       : ""
   bio         : "软件复用研究组硕士研究生，研究方向为软件工程"
   avatar      : "profile.png"
   employer    : "北京大学"
+  group       : "硕士研究生"
+  order       : 203
   type        : "硕士研究生"
   grade       : "2024级"
   research    : "软件工程"
@@ -115,10 +148,13 @@ Li Kunze:
 
 Song Chunfeng:
   name        : "宋春风"
+  key         : "Song Chunfeng"
   email       : ""
   bio         : "软件复用研究组强军硕士研究生，研究方向为软件工程"
   avatar      : "profile.png"
   employer    : "北京大学"
+  group       : "硕士研究生"
+  order       : 204
   type        : "强军硕士研究生"
   grade       : "2024级"
   research    : "软件工程"
@@ -126,10 +162,13 @@ Song Chunfeng:
 
 Yan Runbang:
   name        : "闫润邦"
+  key         : "Yan Runbang"
   email       : ""
   bio         : "软件复用研究组博士研究生（直博），研究方向为软件工程"
   avatar      : "profile.png"
   employer    : "北京大学"
+  group       : "博士研究生"
+  order       : 107
   type        : "博士研究生（直博）"
   grade       : "2025级"
   research    : "软件工程"
@@ -137,10 +176,13 @@ Yan Runbang:
 
 Li Xutian:
   name        : "李旭田"
+  key         : "Li Xutian"
   email       : "xtli25@stu.pku.edu.cn"
   bio         : "软件复用研究组博士研究生（直博），研究方向为软件工程"
   avatar      : "li-xutian.jpg"
   employer    : "北京大学"
+  group       : "博士研究生"
+  order       : 108
   type        : "博士研究生（直博）"
   grade       : "2025级"
   research    : "软件工程"
@@ -148,10 +190,13 @@ Li Xutian:
 
 Zhu Yifeng:
   name        : "朱奕凤"
+  key         : "Zhu Yifeng"
   email       : ""
   bio         : "软件复用研究组博士研究生（直博），研究方向为软件工程"
   avatar      : "profile.png"
   employer    : "北京大学"
+  group       : "博士研究生"
+  order       : 109
   type        : "博士研究生（直博）"
   grade       : "2025级"
   research    : "软件工程"
@@ -159,10 +204,13 @@ Zhu Yifeng:
 
 Sun Jiaxuan:
   name        : "孙嘉旋"
+  key         : "Sun Jiaxuan"
   email       : ""
   bio         : "软件复用研究组硕士研究生，研究方向为软件工程"
   avatar      : "profile.png"
   employer    : "北京大学"
+  group       : "硕士研究生"
+  order       : 205
   type        : "硕士研究生"
   grade       : "2025级"
   research    : "软件工程"
@@ -170,77 +218,115 @@ Sun Jiaxuan:
 
 Zhu Jinyu:
   name        : "朱锦瑜"
+  key         : "Zhu Jinyu"
   email       : ""
   bio         : "软件复用研究组博士研究生（直博），研究方向为软件工程"
   avatar      : "profile.png"
   employer    : "北京大学"
+  group       : "博士研究生"
+  order       : 110
   type        : "博士研究生（直博）"
-  grade       : ""
   research    : "软件工程"
   project     : "502所"
 
 Xiong Bo:
   name        : "熊博"
+  key         : "Xiong Bo"
   email       : ""
   bio         : "软件复用研究组博士研究生（直博），研究方向为软件工程"
   avatar      : "profile.png"
   employer    : "武汉大学"
+  group       : "博士研究生"
+  order       : 111
   type        : "博士研究生（直博）"
-  grade       : ""
   research    : "软件工程"
   project     : "低代码"
 
 Yang Hongyi:
   name        : "杨泓奕"
+  key         : "Yang Hongyi"
   email       : ""
   bio         : "软件复用研究组硕士研究生，研究方向为软件工程"
   avatar      : "profile.png"
   employer    : "南京大学"
+  group       : "硕士研究生"
+  order       : 206
   type        : "硕士研究生"
-  grade       : ""
   research    : "软件工程"
   project     : "AI.OS"
 
 Su Zhengwei:
   name        : "苏政玮"
+  key         : "Su Zhengwei"
   email       : ""
   bio         : "软件复用研究组硕士研究生，研究方向为软件工程"
   avatar      : "profile.png"
   employer    : "北京大学"
+  group       : "硕士研究生"
+  order       : 207
   type        : "硕士研究生"
-  grade       : ""
   research    : "软件工程"
   project     : "OS驱动迁移"
 
 Shi Yujie:
   name        : "史宇颉"
+  key         : "Shi Yujie"
   email       : ""
   bio         : "软件复用研究组成员"
   avatar      : "profile.png"
   employer    : "北京大学"
+  group       : "本科生"
+  order       : 301
   type        : "大三"
-  grade       : ""
   research    : "软件工程"
   project     : "低代码"
 
 Li Wanning:
   name        : "李婉宁"
+  key         : "Li Wanning"
   email       : ""
   bio         : "软件复用研究组成员"
   avatar      : "profile.png"
   employer    : "北京大学"
+  group       : "本科生"
+  order       : 302
   type        : "大三"
-  grade       : ""
   research    : "软件工程"
   project     : "OS驱动迁移"
 
 Feng Yuaning:
   name        : "冯元宁"
+  key         : "Feng Yuaning"
   email       : ""
   bio         : "软件复用研究组成员"
   avatar      : "profile.png"
   employer    : "华中科技大学"
+  group       : "本科生"
+  order       : 303
   type        : "大三"
-  grade       : ""
   research    : "软件工程"
   project     : "强化学习"
+
+Wang Yue:
+  name        : "王玥"
+  key         : "Wang Yue"
+  group       : "已毕业学生"
+  order       : 401
+  year        : "2025"
+  degree      : "博士"
+
+Chang Wenhui:
+  name        : "常文辉"
+  key         : "Chang Wenhui"
+  group       : "已毕业学生"
+  order       : 402
+  year        : "2025"
+  degree      : "硕士"
+
+Pan Xinglu:
+  name        : "潘兴禄"
+  key         : "Pan Xinglu"
+  group       : "已毕业学生"
+  order       : 403
+  year        : "2024"
+  degree      : "博士"

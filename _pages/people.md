@@ -15,7 +15,6 @@ permalink: /people/
 .people-section h2 {
   font-size: 1.5rem;
   color: #333;
-  border-bottom: 2px solid #4a90d9;
   padding-bottom: 10px;
   margin-bottom: 25px;
 }
@@ -102,192 +101,76 @@ permalink: /people/
 }
 </style>
 
-## 负责人
+{%- comment -%}
+分组顺序定义
+{%- endcomment -%}
+{% assign groups_order = "负责人,博士研究生,硕士研究生,本科生,已毕业学生" | split: "," %}
 
-<ul class="people-grid">
-  <a href="{{ base_path }}/people/2026-04-02-xie-bing/" class="person-card">
-    <img src="{{ base_path }}/images/xie-bing.jpeg" alt="谢冰" class="person-avatar">
-    <div class="person-name">谢冰</div>
-    <div class="person-info">教授</div>
-  </a>
-  <a href="{{ base_path }}/people/2026-04-02-zou-yanzhen/" class="person-card">
-    <img src="{{ base_path }}/images/zou-yanzhen.png" alt="邹艳珍" class="person-avatar">
-    <div class="person-name">邹艳珍</div>
-    <div class="person-info">研究员</div>
-  </a>
-</ul>
+{% for group_name in groups_order %}
 
-## 博士研究生
+  {%- comment -%} 收集当前分组的成员 {%- endcomment -%}
+  {% assign group_keys = "" | split: "," %}
+  {% assign group_orders = "" | split: "," %}
 
-<ul class="people-grid">
-  <a href="{{ base_path }}/people/2026-04-02-ma-zexiong/" class="person-card">
-    <div class="person-avatar-placeholder">马</div>
-    <div class="person-name">马泽雄</div>
-    <div class="person-info">2021级</div>
-    <span class="person-type">直博</span>
-  </a>
-  <a href="{{ base_path }}/people/2026-04-02-li-yuxuan/" class="person-card">
-    <div class="person-avatar-placeholder">李</div>
-    <div class="person-name">李宇轩</div>
-    <div class="person-info">2021级</div>
-    <span class="person-type">直博</span>
-  </a>
-  <a href="{{ base_path }}/people/2026-04-02-yuan-haizhuo/" class="person-card">
-    <div class="person-avatar-placeholder">袁</div>
-    <div class="person-name">袁海卓</div>
-    <div class="person-info">2022级</div>
-    <span class="person-type">直博</span>
-  </a>
-  <a href="{{ base_path }}/people/2026-04-02-wang-junfeng/" class="person-card">
-    <div class="person-avatar-placeholder">王</div>
-    <div class="person-name">王俊枫</div>
-    <div class="person-info">2023级</div>
-    <span class="person-type">直博</span>
-  </a>
-  <a href="{{ base_path }}/people/2026-04-02-deng-tongwei/" class="person-card">
-    <div class="person-avatar-placeholder">邓</div>
-    <div class="person-name">邓同蔚</div>
-    <div class="person-info">2024级</div>
-    <span class="person-type">直博</span>
-  </a>
-  <a href="{{ base_path }}/people/2026-04-02-yan-siqiao/" class="person-card">
-    <div class="person-avatar-placeholder">闫</div>
-    <div class="person-name">闫思桥</div>
-    <div class="person-info">2024级</div>
-    <span class="person-type">直博</span>
-  </a>
-  <a href="{{ base_path }}/people/2026-04-02-yan-runbang/" class="person-card">
-    <div class="person-avatar-placeholder">闫</div>
-    <div class="person-name">闫润邦</div>
-    <div class="person-info">2025级</div>
-    <span class="person-type">直博</span>
-  </a>
-  <a href="{{ base_path }}/people/2026-04-02-li-xutian/" class="person-card">
-    <div class="person-avatar-placeholder">李</div>
-    <div class="person-name">李旭田</div>
-    <div class="person-info">2025级</div>
-    <span class="person-type">直博</span>
-  </a>
-  <a href="{{ base_path }}/people/2026-04-02-zhu-yifeng/" class="person-card">
-    <div class="person-avatar-placeholder">朱</div>
-    <div class="person-name">朱奕凤</div>
-    <div class="person-info">2025级</div>
-    <span class="person-type">直博</span>
-  </a>
-  <a href="{{ base_path }}/people/2026-04-02-zhu-jinyu/" class="person-card">
-    <div class="person-avatar-placeholder">朱</div>
-    <div class="person-name">朱锦瑜</div>
-    <div class="person-info">2026级</div>
-    <span class="person-type">直博</span>
-  </a>
-  <a href="{{ base_path }}/people/2026-04-02-xiongbo/" class="person-card">
-    <div class="person-avatar-placeholder">熊</div>
-    <div class="person-name">熊博</div>
-    <div class="person-info">2026级</div>
-    <span class="person-type">直博</span>
-  </a>
+  {% for item in site.data.authors %}
+    {% assign key = item[0] %}
+    {% assign data = item[1] %}
+    {% if data.group == group_name %}
+      {% assign group_keys = group_keys | push: key %}
+      {% assign group_orders = group_orders | push: data.order %}
+    {% endif %}
+  {% endfor %}
 
-</ul>
+  {% if group_keys.size > 0 %}
+    {%- comment -%} 按 order 排序 {%- endcomment -%}
+    {% assign tuples = "" | split: "," %}
+    {% for i in (0..group_keys.size) %}
+      {% unless forloop.last %}
+        {% assign key = group_keys[i] %}
+        {% assign order = group_orders[i] %}
+        {% assign tuple = order | append: "|" | append: key %}
+        {% assign tuples = tuples | push: tuple %}
+      {% endunless %}
+    {% endfor %}
+    {% assign sorted_tuples = tuples | sort %}
 
-<hr class="section-divider">
+  <div class="people-section">
+      <h2>{{ group_name }}</h2>
+      <ul class="people-grid">
+        {% for tuple in sorted_tuples %}
+          {% assign parts = tuple | split: "|" %}
+          {% assign key = parts[1] %}
+          {% assign data = site.data.authors[key] %}
+          {% assign person_file = data.key | replace: " ", "-" %}
+          {% assign first_char = data.name | slice: 0 %}
 
-## 硕士研究生
+          <a href="{{ base_path }}/people/{{ person_file }}/" class="person-card">
+            {% if data.avatar and data.avatar != "profile.png" and data.avatar != "" %}
+              <img src="{{ base_path }}/images/{{ data.avatar }}" alt="{{ data.name }}" class="person-avatar">
+            {% else %}
+              <div class="person-avatar-placeholder">{{ first_char }}</div>
+            {% endif %}
 
-<ul class="people-grid">
-  <a href="{{ base_path }}/people/2026-04-02-zhao-xianlin/" class="person-card">
-    <div class="person-avatar-placeholder">赵</div>
-    <div class="person-name">赵衔麟</div>
-    <div class="person-info">2023级</div>
-    <span class="person-type">硕士</span>
-  </a>
-  
-  <a href="{{ base_path }}/people/2026-04-02-qiu-xiaofei/" class="person-card">
-    <div class="person-avatar-placeholder">邱</div>
-    <div class="person-name">邱小非</div>
-    <div class="person-info">2024级</div>
-    <span class="person-type">硕士</span>
-  </a>
-  <a href="{{ base_path }}/people/2026-04-02-li-kunze/" class="person-card">
-    <div class="person-avatar-placeholder">李</div>
-    <div class="person-name">李坤泽</div>
-    <div class="person-info">2024级</div>
-    <span class="person-type">硕士</span>
-  </a>
-  <a href="{{ base_path }}/people/2026-04-02-song-chunfeng/" class="person-card">
-    <div class="person-avatar-placeholder">宋</div>
-    <div class="person-name">宋春风</div>
-    <div class="person-info">2024级</div>
-    <span class="person-type">强军硕士</span>
-  </a>
-  
-  <a href="{{ base_path }}/people/2026-04-02-sun-jiaxuan/" class="person-card">
-    <div class="person-avatar-placeholder">孙</div>
-    <div class="person-name">孙嘉旋</div>
-    <div class="person-info">2025级</div>
-    <span class="person-type">硕士</span>
-  </a>
+            <div class="person-name">{{ data.name }}</div>
 
-  <a href="{{ base_path }}/people/2026-04-02-yang-hongyi/" class="person-card">
-    <div class="person-avatar-placeholder">杨</div>
-    <div class="person-name">杨泓奕</div>
-    <div class="person-info">2026级</div>
-    <span class="person-type">硕士</span>
-  </a>
-  <a href="{{ base_path }}/people/2026-04-02-su-zhengwei/" class="person-card">
-    <div class="person-avatar-placeholder">苏</div>
-    <div class="person-name">苏政玮</div>
-    <div class="person-info">2026级</div>
-    <span class="person-type">硕士</span>
-  </a>
-</ul>
+            {% if group_name == "已毕业学生" %}
+              {% if data.year %}<div class="person-info">{{ data.year }}年</div>{% endif %}
+              {% if data.degree %}<span class="person-type">{{ data.degree }}</span>{% endif %}
+            {% else %}
+              {% if data.grade and data.grade != "" %}
+                <div class="person-info">{{ data.grade }}</div>
+              {% endif %}
+              {% if data.type and data.type != "" %}
+                <span class="person-type">{{ data.type }}</span>
+              {% endif %}
+            {% endif %}
+          </a>
+        {% endfor %}
+      </ul>
+    </div>
 
-<hr class="section-divider">
+    {% unless forloop.last %}
+    {% endunless %}
 
-## 本科生
-
-<ul class="people-grid">
-  <a href="{{ base_path }}/people/2026-04-02-shi-yujie/" class="person-card">
-    <div class="person-avatar-placeholder">史</div>
-    <div class="person-name">史宇颉</div>
-    <div class="person-info">大三</div>
-    <span class="person-type">北京大学</span>
-  </a>
-  <a href="{{ base_path }}/people/2026-04-02-li-wanning/" class="person-card">
-    <div class="person-avatar-placeholder">李</div>
-    <div class="person-name">李婉宁</div>
-    <div class="person-info">大三</div>
-    <span class="person-type">北京大学</span>
-  </a>
-  <a href="{{ base_path }}/people/2026-04-02-feng-yuanning/" class="person-card">
-    <div class="person-avatar-placeholder">冯</div>
-    <div class="person-name">冯元宁</div>
-    <div class="person-info">大三</div>
-    <span class="person-type">华中科技大学</span>
-  </a>
-</ul>
-
-<hr class="section-divider">
-
-## 已毕业学生
-
-<ul class="people-grid">
-  <a href="" class="person-card">
-    <div class="person-avatar-placeholder">王</div>
-    <div class="person-name">王玥</div>
-    <div class="person-info">2025年</div>
-    <span class="person-type">博士</span>
-  </a>
-  <a href="" class="person-card">
-    <div class="person-avatar-placeholder">常</div>
-    <div class="person-name">常文辉</div>
-    <div class="person-info">2025年</div>
-    <span class="person-type">硕士</span>
-  </a>
-  <a href="" class="person-card">
-    <div class="person-avatar-placeholder">潘</div>
-    <div class="person-name">潘兴禄</div>
-    <div class="person-info">2024年</div>
-    <span class="person-type">博士</span>
-  </a>
-
-</ul>
+  {% endif %}
+{% endfor %}
