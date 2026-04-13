@@ -171,31 +171,24 @@
   </div>
 
   <div class="author__info-section">
-    {%- comment -%} 基本信息：身份类型 {%- endcomment -%}
     {% if author.identity_type %}
       <div class="author__info-item">
-        <span class="author__info-label">身份：</span>
-        <span class="author__info-value">
+        <span class="author__info-label">
           {{ author.identity_type }}
           {% if author.identity_type_note and author.identity_type_note != "" %}
             - {{ author.identity_type_note }}
           {% endif %}
+          {% if author.grade and author.grade != "" %}
+            - {{ author.grade }}
+        {% endif %}
         </span>
-      </div>
-    {% endif %}
-
-    {%- comment -%} 年级 {%- endcomment -%}
-    {% if author.grade and author.grade != "" %}
-      <div class="author__info-item">
-        <span class="author__info-label">年级：</span>
-        <span class="author__info-value">{{ author.grade }}</span>
       </div>
     {% endif %}
 
     {%- comment -%} 研究方向（支持 Markdown 列表） {%- endcomment -%}
     {% if author.research and author.research != "" %}
       <div class="author__info-item">
-        <span class="author__info-label">研究方向：</span>
+        <span class="author__info-label">研究方向</span>
         <div class="author__info-markdown">
           {{ author.research | markdownify }}
         </div>
@@ -205,7 +198,7 @@
     {%- comment -%} 参与项目（支持 Markdown 列表） {%- endcomment -%}
     {% if author.project and author.project != "" %}
       <div class="author__info-item">
-        <span class="author__info-label">参与项目：</span>
+        <span class="author__info-label">参与项目</span>
         <div class="author__info-markdown">
           {{ author.project | markdownify }}
         </div>

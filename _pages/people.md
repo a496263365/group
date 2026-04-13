@@ -100,56 +100,6 @@ permalink: /people/
   border: 0;
   border-top: 1px dashed #e0e0e0;
 }
-
-/* author-profile 侧边栏样式 */
-.author__info-section {
-  margin: 15px 0;
-  padding: 15px 0;
-  border-top: 1px solid #e8e8e8;
-  border-bottom: 1px solid #e8e8e8;
-}
-
-.author__info-item {
-  margin-bottom: 10px;
-  line-height: 1.6;
-}
-
-.author__info-item:last-child {
-  margin-bottom: 0;
-}
-
-.author__info-label {
-  font-weight: 600;
-  color: #555;
-}
-
-.author__info-value {
-  color: #333;
-}
-
-.author__info-markdown {
-  display: inline;
-}
-
-.author__info-markdown ul,
-.author__info-markdown ol {
-  display: inline;
-  margin: 0;
-  padding-left: 20px;
-}
-
-.author__info-markdown li {
-  display: inline;
-  margin-right: 8px;
-}
-
-.author__info-markdown li::after {
-  content: "、";
-}
-
-.author__info-markdown li:last-child::after {
-  content: "";
-}
 </style>
 
 {%- comment -%}
