@@ -13,24 +13,24 @@ title                    : "软件复用小组"
 title_separator          : "-"
 name                     : &name "软件复用小组"
 description              : &description "软件复用研究组 - 北京大学"   # Update this with a general description of your site, this is the default if not overridden by a page
-url                      : https://a496263365.github.io/group # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
+url                      : https://PKU-SoftwareReuse.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "academicpages/academicpages.github.io"
+repository               : "PKU-SoftwareReuse/PKU-SoftwareReuse.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "group_logo_trans_big.png"
   name             : "软件复用小组"
   pronouns         :
   bio              : "软件工程与人工智能研究"
   location         : "北京"
   employer         : "北京大学"
   uri              :
-  email            : "zouyz@pku.edu.cn" 
+  email            : "xtli25@stu.pku.edu.cn" 
 
   # # Academic websites
   # academia         : # URL

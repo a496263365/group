@@ -95,8 +95,8 @@ author_profile: false
 
 ## 联系我们
 
-- 邮箱：swreuse@pku.edu.cn
-- 地址：北京大学
+- 邹老师邮箱：zouyz@pku.edu.cn
+- 地址：北京大学理科一号楼
 
 欢迎关注我们的研究工作，如有任何问题或合作意向，请随时与我们联系。
 

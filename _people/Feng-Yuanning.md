@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "冯元宁"
-author: "Feng Yuaning"
+author: "Feng Yuanning"
 author_profile: true
 sidebar:
   - title: "研究方向"
