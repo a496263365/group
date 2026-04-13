@@ -147,7 +147,7 @@ permalink: /people/
         {% assign should_add = true %}
       {% endif %}
     {% elsif group_name == "已毕业学生" %}
-      {% if data.identity_type == "已毕业" %}
+      {% if data.identity_type == "博士" or data.identity_type == "硕士" %}
         {% assign should_add = true %}
       {% endif %}
     {% endif %}
@@ -191,21 +191,16 @@ permalink: /people/
 
             <div class="person-name">{{ data.name }}</div>
 
-            {% if group_name == "已毕业学生" %}
-              {% if data.year %}<div class="person-grade">{{ data.year }}年</div>{% endif %}
-              {% if data.degree %}<span class="person-identity">{{ data.degree }}</span>{% endif %}
-            {% else %}
-              {%- comment -%} 显示 identity_type-identity_type_note，如无 identity_type_note 则不显示- {%- endcomment -%}
-              <span class="person-identity">
-                {% if data.identity_type_note and data.identity_type_note != "" %}
-                  {{ data.identity_type }}-{{ data.identity_type_note }}
-                {% else %}
-                  {{ data.identity_type }}
-                {% endif %}
-              </span>
-              {% if data.grade and data.grade != "" %}
-                <div class="person-grade">{{ data.grade }}</div>
+            {%- comment -%} 显示 identity_type-identity_type_note，如无 identity_type_note 则不显示- {%- endcomment -%}
+            <span class="person-identity">
+              {% if data.identity_type_note and data.identity_type_note != "" %}
+                {{ data.identity_type }}-{{ data.identity_type_note }}
+              {% else %}
+                {{ data.identity_type }}
               {% endif %}
+            </span>
+            {% if data.grade and data.grade != "" %}
+              <div class="person-grade">{{ data.grade }}</div>
             {% endif %}
           </a>
         {% endfor %}
