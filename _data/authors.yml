@@ -182,7 +182,7 @@ Zhu Yifeng:
 Zhu Jinyu:
   name: 朱锦瑜
   key: Zhu Jinyu
-  identity_type: 博士生
+  identity_type: 本科生
   identity_type_note: 直博
   grade: 2026级
   avatar_big: profile.png
@@ -199,14 +199,17 @@ Zhu Jinyu:
 Xiong Bo:
   name: 熊博
   key: Xiong Bo
-  identity_type: 博士生
+  identity_type: 本科生
   identity_type_note: 直博
   grade: 2026级
-  employer: 武汉大学
-  email: ''
-  bio: 软件复用研究组博士研究生（直博），研究方向为软件工程
   avatar_big: profile.png
   avatar_small: profile.png
+  bio: 软件复用研究组博士研究生（直博），研究方向为软件工程
+  employer: 武汉大学
+  email: ''
+  github: ''
+  orcid: ''
+  googlescholar: ''
   research: 软件工程
   project: 低代码
   order: 111
@@ -283,7 +286,7 @@ Sun Jiaxuan:
 Yang Hongyi:
   name: 杨泓奕
   key: Yang Hongyi
-  identity_type: 硕士生
+  identity_type: 本科生
   identity_type_note: ''
   grade: 2026级
   avatar_big: profile.png
@@ -300,7 +303,7 @@ Yang Hongyi:
 Su Zhengwei:
   name: 苏政玮
   key: Su Zhengwei
-  identity_type: 硕士生
+  identity_type: 本科生
   identity_type_note: ''
   grade: 2026级
   avatar_big: profile.png
@@ -357,7 +360,6 @@ Wang Chenxu:
   avatar_big: profile.png
   avatar_small: profile.png
   bio: 软件复用研究组成员
-  profile_md: "## 个人简介\r\n软件复用研究组成员"
   employer: 北京大学
   email: 2400013225@stu.pku.edu.cn
   github: ''
@@ -365,7 +367,7 @@ Wang Chenxu:
   googlescholar: ''
   research: ''
   project: ''
-  order: 303
+  order: 305
 Feng Yuanning:
   name: 冯元宁
   key: Feng Yuanning

@@ -11,10 +11,3 @@ author_profile: true
 
 杨泓奕，软件复用研究组硕士研究生，研究方向为软件工程，目前参与AI.OS相关项目。
 
----
-
-<style>
-section {
-  margin-bottom: 25px;
-}
-</style>
