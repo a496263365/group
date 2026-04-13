@@ -3,9 +3,6 @@ layout: single
 title: "谢冰"
 author: "Xie Bing"
 author_profile: true
-sidebar:
-  - title: "研究方向"
-    text: "软件工程、计算机科学理论、分布式系统"
 ---
 
 {% include base_path %}

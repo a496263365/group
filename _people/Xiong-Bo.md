@@ -3,9 +3,6 @@ layout: single
 title: "熊博"
 author: "Xiong Bo"
 author_profile: true
-sidebar:
-  - title: "研究方向"
-    text: "软件工程"
 ---
 
 {% include base_path %}
@@ -15,19 +12,6 @@ sidebar:
 熊博，软件复用研究组博士研究生（直博），研究方向为软件工程，目前参与低代码相关项目。
 
 ---
-
-## 研究方向
-
-- 软件工程
-- 低代码平台
-- 软件复用
-
----
-
-## 联系方式
-
-- 邮箱：（待补充）
-- 地址：武汉大学
 
 <style>
 section {

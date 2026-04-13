@@ -78,20 +78,21 @@ permalink: /people/
   margin-bottom: 8px;
 }
 
-.person-info {
-  font-size: 0.85rem;
-  color: #666;
-  line-height: 1.4;
-}
-
-.person-type {
+.person-identity {
   display: inline-block;
-  padding: 2px 10px;
+  padding: 4px 12px;
   background: #f0f7ff;
   color: #4a90d9;
   border-radius: 12px;
   font-size: 0.8rem;
-  margin-top: 6px;
+  margin-bottom: 4px;
+}
+
+.person-grade {
+  font-size: 0.85rem;
+  color: #666;
+  line-height: 1.4;
+  margin-bottom: 4px;
 }
 
 .section-divider {
@@ -99,12 +100,74 @@ permalink: /people/
   border: 0;
   border-top: 1px dashed #e0e0e0;
 }
+
+/* author-profile 侧边栏样式 */
+.author__info-section {
+  margin: 15px 0;
+  padding: 15px 0;
+  border-top: 1px solid #e8e8e8;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.author__info-item {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.author__info-item:last-child {
+  margin-bottom: 0;
+}
+
+.author__info-label {
+  font-weight: 600;
+  color: #555;
+}
+
+.author__info-value {
+  color: #333;
+}
+
+.author__info-markdown {
+  display: inline;
+}
+
+.author__info-markdown ul,
+.author__info-markdown ol {
+  display: inline;
+  margin: 0;
+  padding-left: 20px;
+}
+
+.author__info-markdown li {
+  display: inline;
+  margin-right: 8px;
+}
+
+.author__info-markdown li::after {
+  content: "、";
+}
+
+.author__info-markdown li:last-child::after {
+  content: "";
+}
 </style>
 
 {%- comment -%}
-分组顺序定义
+分组顺序定义和 identity_type 映射
 {%- endcomment -%}
 {% assign groups_order = "负责人,博士研究生,硕士研究生,本科生,已毕业学生" | split: "," %}
+{% assign type_to_group = "" | split: "," %}
+{% assign type_to_group = type_to_group | push: "教授|研究员" | split: "" %}
+{% assign type_to_group = type_to_group | push: "负责人" | split: "" %}
+
+{%- comment -%}
+创建 identity_type 到分组的映射
+{%- endcomment -%}
+{% capture professor_types %}教授,研究员{% endcapture %}
+{% capture phd_types %}博士生{% endcapture %}
+{% capture master_types %}硕士生{% endcapture %}
+{% capture bachelor_types %}本科生{% endcapture %}
+{% capture graduate_types %}已毕业{% endcapture %}
 
 {% for group_name in groups_order %}
 
@@ -115,7 +178,31 @@ permalink: /people/
   {% for item in site.data.authors %}
     {% assign key = item[0] %}
     {% assign data = item[1] %}
-    {% if data.group == group_name %}
+    {% assign should_add = false %}
+
+    {% if group_name == "负责人" %}
+      {% if professor_types contains data.identity_type %}
+        {% assign should_add = true %}
+      {% endif %}
+    {% elsif group_name == "博士研究生" %}
+      {% if data.identity_type == "博士生" %}
+        {% assign should_add = true %}
+      {% endif %}
+    {% elsif group_name == "硕士研究生" %}
+      {% if data.identity_type == "硕士生" %}
+        {% assign should_add = true %}
+      {% endif %}
+    {% elsif group_name == "本科生" %}
+      {% if data.identity_type == "本科生" %}
+        {% assign should_add = true %}
+      {% endif %}
+    {% elsif group_name == "已毕业学生" %}
+      {% if data.identity_type == "已毕业" %}
+        {% assign should_add = true %}
+      {% endif %}
+    {% endif %}
+
+    {% if should_add %}
       {% assign group_keys = group_keys | push: key %}
       {% assign group_orders = group_orders | push: data.order %}
     {% endif %}
@@ -145,8 +232,9 @@ permalink: /people/
           {% assign first_char = data.name | slice: 0 %}
 
           <a href="{{ base_path }}/people/{{ person_file }}/" class="person-card">
-            {% if data.avatar and data.avatar != "profile.png" and data.avatar != "" %}
-              <img src="{{ base_path }}/images/{{ data.avatar }}" alt="{{ data.name }}" class="person-avatar">
+            {%- comment -%} 使用 avatar 字段，若为空或 profile.png 则显示名字首字 {%- endcomment -%}
+            {% if data.avatar_small and data.avatar_small != "profile.png" and data.avatar_small != "" %}
+              <img src="{{ base_path }}/images/{{ data.avatar_small }}" alt="{{ data.name }}" class="person-avatar">
             {% else %}
               <div class="person-avatar-placeholder">{{ first_char }}</div>
             {% endif %}
@@ -154,23 +242,25 @@ permalink: /people/
             <div class="person-name">{{ data.name }}</div>
 
             {% if group_name == "已毕业学生" %}
-              {% if data.year %}<div class="person-info">{{ data.year }}年</div>{% endif %}
-              {% if data.degree %}<span class="person-type">{{ data.degree }}</span>{% endif %}
+              {% if data.year %}<div class="person-grade">{{ data.year }}年</div>{% endif %}
+              {% if data.degree %}<span class="person-identity">{{ data.degree }}</span>{% endif %}
             {% else %}
+              {%- comment -%} 显示 identity_type-identity_type_note，如无 identity_type_note 则不显示- {%- endcomment -%}
+              <span class="person-identity">
+                {% if data.identity_type_note and data.identity_type_note != "" %}
+                  {{ data.identity_type }}-{{ data.identity_type_note }}
+                {% else %}
+                  {{ data.identity_type }}
+                {% endif %}
+              </span>
               {% if data.grade and data.grade != "" %}
-                <div class="person-info">{{ data.grade }}</div>
-              {% endif %}
-              {% if data.type and data.type != "" %}
-                <span class="person-type">{{ data.type }}</span>
+                <div class="person-grade">{{ data.grade }}</div>
               {% endif %}
             {% endif %}
           </a>
         {% endfor %}
       </ul>
     </div>
-
-    {% unless forloop.last %}
-    {% endunless %}
 
   {% endif %}
 {% endfor %}
