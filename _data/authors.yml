@@ -2,19 +2,31 @@ Xie Bing:
   name: 谢冰
   key: Xie Bing
   identity_type: 教授
-  identity_type_note: '杰青'
+  identity_type_note: 杰青
   grade: ''
-
-  employer: 北京大学信息科学技术学院
-  email: xiebing@pku.edu.cn
-
-  bio: 北京大学信息科学技术学院教授、国家杰出青年基金获得者
   avatar_big: xie-bing.jpeg
   avatar_small: xie-bing.jpeg
-
-  research: '软件工程、计算机科学理论、分布式系统'
+  bio: 北京大学信息科学技术学院教授、国家杰出青年基金获得者
+  profile_md: "## 个人简介\r\n\r\n谢冰，1970年生于湖南省。现任北京大学信息科学技术学院常务副院长，软件研究所所长，教授，国家杰出青年基金获得者，入选教育部新世纪优秀人才计划、北京市科技新星计划，获\"\
+    中创软件人才奖\"。\r\n\r\n作为课题负责人，先后承担了国家863计划、科技支撑计划、国家重点专项、北京市科委重点课题、国家自然科学基金委杰出青年基金等重点项目9项，参与973、863计划、基金重点等课题5项。在软件工程技术研发和国产软件工具研发与产业化方面做出了重要的贡献，主要成果在软件行业、信息服务业、国防军工领域、集成电路设计领域中广泛应用。在FSE、POPL等软件工程与程序语言领域顶级会议、主流会议和期刊上发表论文80余篇。\r\
+    \n\r\n---\r\n\r\n## 科研/教育经历\r\n\r\n- **1998年**：博士，国防科技大学\r\n\r\n---\r\n\r\n##\
+    \ 主要荣誉与获奖\r\n\r\n| 年份 | 奖项 | 成果 |\r\n|:---:|:---|:---|\r\n| 2015 | 国家技术发明二等奖（排名第2）\
+    \ | 基于网络的软件开发群体化方法及核心技术 |\r\n| 2012 | 教育部高等学校科学技术进步一等奖（排名第1） | 可信软件资源生产与共享环境Trustie-TSE\
+    \ |\r\n| 2009 | 北京市科学技术奖技术发明类二等奖（排名第1） | 青鸟软件质量保证支撑工具体系 |\r\n| 2006 | 国家科技进步二等奖（排名第3）\
+    \ | 基于Internet、以构件库为核心的软件开发平台 |\r\n\r\n---\r\n\r\n## 社会兼职\r\n\r\n- 中国软件行业协会理事\r\
+    \n- 中国计算机学会高级会员\r\n- 电子学报英文版编委\r\n\r\n---\r\n\r\n## 联系方式\r\n\r\n- 邮箱：xiebing@pku.edu.cn\r\
+    \n- 地址：北京大学\r\n\r\n<style>\r\ntable {\r\n  width: 100%;\r\n  border-collapse:\
+    \ collapse;\r\n  margin: 15px 0;\r\n}\r\nth, td {\r\n  border: 1px solid #ddd;\r\
+    \n  padding: 10px;\r\n  text-align: left;\r\n}\r\nth {\r\n  background-color:\
+    \ #f5f5f5;\r\n  width: 100px;\r\n}\r\nsection {\r\n  margin-bottom: 30px;\r\n\
+    }\r\n</style>"
+  employer: 北京大学信息科学技术学院
+  email: xiebing@pku.edu.cn
+  github: ''
+  orcid: ''
+  googlescholar: ''
+  research: "软件工程\r\n计算机科学理论\r\n分布式系统"
   project: ''
-
   order: 1
 Zou Yanzhen:
   name: 邹艳珍
@@ -22,17 +34,16 @@ Zou Yanzhen:
   identity_type: 研究员
   identity_type_note: ''
   grade: ''
-
-  employer: 北京大学计算机学院
-  email: zouyz@pku.edu.cn
-
-  bio: 北京大学计算机学院研究员、博导、硕导
   avatar_big: zou-yanzhen.png
   avatar_small: zou-yanzhen.png
-
+  bio: 北京大学计算机学院研究员、博导、硕导
+  employer: 北京大学计算机学院
+  email: zouyz@pku.edu.cn
+  github: ''
+  orcid: ''
+  googlescholar: ''
   research: 软件工程
   project: ''
-
   order: 2
 Ma Zexiong:
   name: 马泽雄
@@ -40,17 +51,16 @@ Ma Zexiong:
   identity_type: 博士生
   identity_type_note: 直博
   grade: 2021级
-
-  employer: 北京大学
-  email: ''
-
-  bio: 软件复用研究组博士研究生（直博），研究方向为软件工程
   avatar_big: profile.png
   avatar_small: profile.png
-
+  bio: 软件复用研究组博士研究生（直博），研究方向为软件工程
+  employer: 北京大学
+  email: ''
+  github: ''
+  orcid: ''
+  googlescholar: ''
   research: 软件工程
   project: ''
-
   order: 101
 Li Yuxuan:
   name: 李宇轩
@@ -58,17 +68,13 @@ Li Yuxuan:
   identity_type: 博士生
   identity_type_note: 直博
   grade: 2021级
-
   employer: 北京大学
   email: ''
-
   bio: 软件复用研究组博士研究生（直博），研究方向为软件工程
   avatar_big: profile.png
   avatar_small: profile.png
-
   research: 软件工程
   project: 502所
-
   order: 102
 Yuan Haizhuo:
   name: 袁海卓
@@ -76,17 +82,13 @@ Yuan Haizhuo:
   identity_type: 博士生
   identity_type_note: 直博
   grade: 2022级
-
   employer: 北京大学
   email: ''
-
   bio: 软件复用研究组博士研究生（直博），研究方向为软件工程
   avatar_big: profile.png
   avatar_small: profile.png
-
   research: 软件工程
   project: 系统版本迁移
-
   order: 103
 Wang Junfeng:
   name: 王俊枫
@@ -94,17 +96,13 @@ Wang Junfeng:
   identity_type: 博士生
   identity_type_note: 直博
   grade: 2023级
-
   employer: 北京大学
   email: ''
-
   bio: 软件复用研究组博士研究生（直博），研究方向为软件工程
   avatar_big: profile.png
   avatar_small: profile.png
-
   research: 软件工程
   project: ''
-
   order: 104
 Deng Tongwei:
   name: 邓同蔚
@@ -112,17 +110,13 @@ Deng Tongwei:
   identity_type: 博士生
   identity_type_note: 直博
   grade: 2024级
-
   employer: 北京大学
   email: ''
-
   bio: 软件复用研究组博士研究生（直博），研究方向为软件工程
   avatar_big: profile.png
   avatar_small: profile.png
-
   research: 软件工程
   project: 字节
-
   order: 105
 Yan Siqiao:
   name: 闫思桥
@@ -130,17 +124,13 @@ Yan Siqiao:
   identity_type: 博士生
   identity_type_note: 直博
   grade: 2024级
-
   employer: 北京大学
   email: ''
-
   bio: 软件复用研究组博士研究生（直博），研究方向为软件工程
   avatar_big: profile.png
   avatar_small: profile.png
-
   research: 软件工程
   project: 502所
-
   order: 106
 Yan Runbang:
   name: 闫润邦
@@ -148,17 +138,13 @@ Yan Runbang:
   identity_type: 博士生
   identity_type_note: 直博
   grade: 2025级
-
   employer: 北京大学
   email: ''
-
   bio: 软件复用研究组博士研究生（直博），研究方向为软件工程
   avatar_big: profile.png
   avatar_small: profile.png
-
   research: 软件工程
   project: ''
-
   order: 107
 Li Xutian:
   name: 李旭田
@@ -166,17 +152,18 @@ Li Xutian:
   identity_type: 博士生
   identity_type_note: 直博
   grade: 2025级
-
-  employer: 北京大学计算机学院
-  email: xtli25@stu.pku.edu.cn
-
-  bio: 软件复用研究组博士研究生（直博），研究方向为软件工程
   avatar_big: li-xutian.jpg
   avatar_small: li-xutian.jpg
-
-  research: 软件工程
+  bio: 软件复用研究组博士研究生（直博），研究方向为软件工程
+  profile_md: "## 个人简介\r\n\r\n李旭田，软件复用研究组博士研究生（直博），研究方向为软件工程，目前参与低代码相关项目。\r\n\r\n\
+    ---\r\n\r\n<style>\r\nsection {\r\n  margin-bottom: 25px;\r\n}\r\n</style>"
+  employer: 北京大学计算机学院
+  email: xtli25@stu.pku.edu.cn
+  github: a496263365
+  orcid: 0009-0001-2441-7447
+  googlescholar: https://scholar.google.com/citations?user=W79SiQYAAAAJ
+  research: "软件工程\r\n人工智能"
   project: 低代码
-
   order: 108
 Zhu Yifeng:
   name: 朱奕凤
@@ -184,35 +171,30 @@ Zhu Yifeng:
   identity_type: 博士生
   identity_type_note: 直博
   grade: 2025级
-
   employer: 北京大学
   email: ''
-
   bio: 软件复用研究组博士研究生（直博），研究方向为软件工程
   avatar_big: profile.png
   avatar_small: profile.png
-
   research: 软件工程
   project: 低代码
-
   order: 109
 Zhu Jinyu:
   name: 朱锦瑜
   key: Zhu Jinyu
   identity_type: 博士生
   identity_type_note: 直博
-  grade: ''
-
-  employer: 北京大学
-  email: ''
-
-  bio: 软件复用研究组博士研究生（直博），研究方向为软件工程
+  grade: 2026级
   avatar_big: profile.png
   avatar_small: profile.png
-
+  bio: 软件复用研究组博士研究生（直博），研究方向为软件工程
+  employer: 北京大学
+  email: ''
+  github: ''
+  orcid: ''
+  googlescholar: ''
   research: 软件工程
   project: 502所
-
   order: 110
 Xiong Bo:
   name: 熊博
@@ -220,17 +202,13 @@ Xiong Bo:
   identity_type: 博士生
   identity_type_note: 直博
   grade: 2026级
-
   employer: 武汉大学
   email: ''
-
   bio: 软件复用研究组博士研究生（直博），研究方向为软件工程
   avatar_big: profile.png
   avatar_small: profile.png
-
   research: 软件工程
   project: 低代码
-
   order: 111
 Zhao Xianlin:
   name: 赵衔麟
@@ -238,17 +216,13 @@ Zhao Xianlin:
   identity_type: 硕士生
   identity_type_note: ''
   grade: 2023级
-
   employer: 北京大学
   email: ''
-
   bio: 软件复用研究组硕士研究生，研究方向为软件工程
   avatar_big: profile.png
   avatar_small: profile.png
-
   research: 软件工程
   project: 低代码
-
   order: 201
 Qiu Xiaofei:
   name: 邱小非
@@ -256,17 +230,13 @@ Qiu Xiaofei:
   identity_type: 硕士生
   identity_type_note: ''
   grade: 2024级
-
   employer: 北京大学
   email: ''
-
   bio: 软件复用研究组硕士研究生，研究方向为软件工程
   avatar_big: profile.png
   avatar_small: profile.png
-
   research: 软件工程
   project: 502所
-
   order: 202
 Li Kunze:
   name: 李坤泽
@@ -274,17 +244,13 @@ Li Kunze:
   identity_type: 硕士生
   identity_type_note: ''
   grade: 2024级
-
   employer: 北京大学
   email: ''
-
   bio: 软件复用研究组硕士研究生，研究方向为软件工程
   avatar_big: profile.png
   avatar_small: profile.png
-
   research: 软件工程
   project: 低代码
-
   order: 203
 Song Chunfeng:
   name: 宋春风
@@ -292,17 +258,13 @@ Song Chunfeng:
   identity_type: 硕士生
   identity_type_note: 强军硕士
   grade: 2024级
-
   employer: 北京大学
   email: ''
-
   bio: 软件复用研究组强军硕士研究生，研究方向为软件工程
   avatar_big: profile.png
   avatar_small: profile.png
-
   research: 软件工程
   project: OS驱动迁移
-
   order: 204
 Sun Jiaxuan:
   name: 孙嘉旋
@@ -310,177 +272,156 @@ Sun Jiaxuan:
   identity_type: 硕士生
   identity_type_note: ''
   grade: 2025级
-
   employer: 北京大学
   email: ''
-
   bio: 软件复用研究组硕士研究生，研究方向为软件工程
   avatar_big: profile.png
   avatar_small: profile.png
-
   research: 软件工程
   project: OS驱动迁移
-
   order: 205
 Yang Hongyi:
   name: 杨泓奕
   key: Yang Hongyi
   identity_type: 硕士生
   identity_type_note: ''
-  grade: ''
-
-  employer: 南京大学
-  email: ''
-
-  bio: 软件复用研究组硕士研究生，研究方向为软件工程
+  grade: 2026级
   avatar_big: profile.png
   avatar_small: profile.png
-
+  bio: 软件复用研究组硕士研究生，研究方向为软件工程
+  employer: 南京大学
+  email: ''
+  github: ''
+  orcid: ''
+  googlescholar: ''
   research: 软件工程
   project: AI.OS
-
   order: 206
 Su Zhengwei:
   name: 苏政玮
   key: Su Zhengwei
   identity_type: 硕士生
   identity_type_note: ''
-  grade: ''
-
-  employer: 北京大学
-  email: ''
-
-  bio: 软件复用研究组硕士研究生，研究方向为软件工程
+  grade: 2026级
   avatar_big: profile.png
   avatar_small: profile.png
-
+  bio: 软件复用研究组硕士研究生，研究方向为软件工程
+  employer: 北京大学
+  email: ''
+  github: ''
+  orcid: ''
+  googlescholar: ''
   research: 软件工程
   project: OS驱动迁移
-
   order: 207
 Shi Yujie:
   name: 史宇颉
   key: Shi Yujie
   identity_type: 本科生
-  identity_type_note: 大三
-  grade: ''
-
-  employer: 北京大学
-  email: ''
-
-  bio: 软件复用研究组成员
+  identity_type_note: 北京大学
+  grade: 大三
   avatar_big: profile.png
   avatar_small: profile.png
-
+  bio: 软件复用研究组成员
+  employer: 北京大学
+  email: ''
+  github: ''
+  orcid: ''
+  googlescholar: ''
   research: 软件工程
   project: 低代码
-
   order: 301
 Li Wanning:
   name: 李婉宁
   key: Li Wanning
   identity_type: 本科生
-  identity_type_note: 大三
-  grade: ''
-
-  employer: 北京大学
-  email: ''
-
-  bio: 软件复用研究组成员
+  identity_type_note: 北京大学
+  grade: 大三
   avatar_big: profile.png
   avatar_small: profile.png
-
+  bio: 软件复用研究组成员
+  employer: 北京大学
+  email: ''
+  github: ''
+  orcid: ''
+  googlescholar: ''
   research: 软件工程
   project: OS驱动迁移
-
   order: 302
 Wang Chenxu:
   name: 王晨旭
   key: Wang Chenxu
   identity_type: 本科生
-  identity_type_note: 大二
-  grade: ''
-
-  employer: 北京大学
-  email: 2400013225@stu.pku.edu.cn
-
-  bio: 软件复用研究组成员
+  identity_type_note: 北京大学
+  grade: 大二
   avatar_big: profile.png
   avatar_small: profile.png
-
+  bio: 软件复用研究组成员
+  profile_md: "## 个人简介\r\n软件复用研究组成员"
+  employer: 北京大学
+  email: 2400013225@stu.pku.edu.cn
+  github: ''
+  orcid: ''
+  googlescholar: ''
   research: ''
   project: ''
-
   order: 303
 Feng Yuanning:
   name: 冯元宁
   key: Feng Yuanning
   identity_type: 本科生
-  identity_type_note: 大三
-  grade: ''
-
-  employer: 华中科技大学
-  email: ''
-
-  bio: 软件复用研究组成员
+  identity_type_note: 华中科技大学
+  grade: 大三
   avatar_big: profile.png
   avatar_small: profile.png
-
+  bio: 软件复用研究组成员
+  employer: 华中科技大学
+  email: ''
+  github: ''
+  orcid: ''
+  googlescholar: ''
   research: 软件工程
   project: 强化学习
-
   order: 304
 Wang Yue:
   name: 王玥
   key: Wang Yue
   identity_type: 博士
   identity_type_note: ''
-  grade: '2025届'
-
+  grade: 2025届
   employer: ''
   email: ''
-
   bio: ''
   avatar_big: profile.png
   avatar_small: profile.png
-
   research: ''
   project: ''
-
   order: 401
 Chang Wenhui:
   name: 常文辉
   key: Chang Wenhui
   identity_type: 硕士
   identity_type_note: ''
-  grade: '2025届'
-
+  grade: 2025届
   employer: ''
   email: ''
-
   bio: ''
   avatar_big: profile.png
   avatar_small: profile.png
-
   research: ''
   project: ''
-
   order: 402
 Pan Xinglu:
   name: 潘兴禄
   key: Pan Xinglu
   identity_type: 博士
   identity_type_note: ''
-  grade: '2024届'
-
+  grade: 2024届
   employer: ''
   email: ''
-
   bio: ''
   avatar_big: profile.png
   avatar_small: profile.png
-
   research: ''
   project: ''
-
   order: 403

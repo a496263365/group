@@ -184,7 +184,7 @@ permalink: /people/
           <a href="{{ base_path }}/people/{{ person_file }}/" class="person-card">
             {%- comment -%} 使用 avatar 字段，若为空或 profile.png 则显示名字首字 {%- endcomment -%}
             {% if data.avatar_small and data.avatar_small != "profile.png" and data.avatar_small != "" %}
-              <img src="{{ base_path }}/images/{{ data.avatar_small }}" alt="{{ data.name }}" class="person-avatar">
+              <img src="{{ base_path }}/avatars/{{ data.avatar_small }}" alt="{{ data.name }}" class="person-avatar">
             {% else %}
               <div class="person-avatar-placeholder">{{ first_char }}</div>
             {% endif %}

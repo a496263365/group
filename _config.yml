@@ -23,7 +23,7 @@ repository               : "PKU-SoftwareReuse/PKU-SoftwareReuse.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "group_logo_trans_big.png"
+  avatar_big       : "group_logo_trans_big.png"
   name             : "软件复用小组"
   pronouns         :
   bio              : "软件工程与人工智能研究"
